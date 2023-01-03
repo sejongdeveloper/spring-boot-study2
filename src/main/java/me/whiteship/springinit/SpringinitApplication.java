@@ -1,5 +1,6 @@
 package me.whiteship.springinit;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -7,9 +8,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class SpringinitApplication {
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder()
-				.sources(SpringinitApplication.class)
-				.run(args);
+		SpringApplication app = new SpringApplication(SpringinitApplication.class);
+		app.addListeners(new SampleListener());
+		app.run(args);
 	}
 
 }
