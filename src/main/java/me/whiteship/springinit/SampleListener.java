@@ -1,16 +1,12 @@
 package me.whiteship.springinit;
 
-import org.springframework.boot.context.event.ApplicationStartedEvent;
-import org.springframework.context.ApplicationListener;
+import org.springframework.boot.ApplicationArguments;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SampleListener implements ApplicationListener<ApplicationStartedEvent> {
-
-    @Override
-    public void onApplicationEvent(ApplicationStartedEvent event) {
-        System.out.println("=======");
-        System.out.println("Started");
-        System.out.println("=======");
+public class SampleListener {
+    public SampleListener(ApplicationArguments arguments) {
+        System.out.println("foo: " + arguments.containsOption("foo"));
+        System.out.println("bar: " + arguments.containsOption("bar"));
     }
 }
