@@ -16,6 +16,7 @@ public class SpringRunner implements ApplicationRunner {
         System.out.println("=======================");
         System.out.println(keesunProperties.getName());
         System.out.println(keesunProperties.getAge());
+        System.out.println(keesunProperties.getSessionTimeout());
         System.out.println("=======================");
     }
 }

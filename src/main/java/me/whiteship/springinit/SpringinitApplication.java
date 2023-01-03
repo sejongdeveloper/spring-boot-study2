@@ -10,12 +10,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringinitApplication {
 
-	@ConfigurationProperties("server")
-	@Bean
-	public ServerProperties serverProperties() {
-		return new ServerProperties();
-	}
-
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(SpringinitApplication.class);
 		app.setWebApplicationType(WebApplicationType.NONE);
