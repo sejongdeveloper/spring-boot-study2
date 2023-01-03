@@ -1,7 +1,9 @@
 package me.whiteship.springinit;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
+@Component
 @ConfigurationProperties("keesun")
 public class KeesunProperties {
     private String name;
