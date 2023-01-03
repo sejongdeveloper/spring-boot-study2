@@ -20,7 +20,6 @@ public class KeesunProperties {
         return name;
     }
 
-    @DurationUnit(ChronoUnit.SECONDS)
     private Duration sessionTimeout = Duration.ofSeconds(30);
 
     public void setName(String name) {
