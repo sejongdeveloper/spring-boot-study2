@@ -10,9 +10,6 @@ public class SpringRunner implements ApplicationRunner {
 
     @Value("${keesun.fullName}")
     private String fullName;
-    @Value("${keesun.name}")
-    private String name;
-
     @Value("${keesun.age}")
     private int age;
 
@@ -20,7 +17,6 @@ public class SpringRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("=======================");
         System.out.println(fullName);
-        System.out.println(name);
         System.out.println(age);
         System.out.println("=======================");
     }

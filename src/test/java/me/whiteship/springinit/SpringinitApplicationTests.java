@@ -8,8 +8,8 @@ import org.springframework.test.context.TestPropertySource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@TestPropertySource(properties = "keesun.name=keesun2")
-@SpringBootTest(properties = "keesun.name=keesun3")
+@TestPropertySource(locations = "classpath:/test.properties")
+@SpringBootTest
 class SpringinitApplicationTests {
 
 	@Autowired
