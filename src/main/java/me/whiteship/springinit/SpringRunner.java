@@ -18,10 +18,10 @@ public class SpringRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        logger.info("=====================");
-        logger.info(hello);
-        logger.info(keesunProperties.getName());
-        logger.info(keesunProperties.getFullName());
-        logger.info("=====================");
+        logger.debug("=====================");
+        logger.debug(hello);
+        logger.debug(keesunProperties.getName());
+        logger.debug(keesunProperties.getFullName());
+        logger.debug("=====================");
     }
 }
